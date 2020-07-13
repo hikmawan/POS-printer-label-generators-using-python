@@ -24,7 +24,7 @@ draw = ImageDraw.Draw(image)
 #or install it using "apt-get install fontconfig" for ubuntu and select one from it.
 
 
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=45)
+font = ImageFont.truetype('sans_serif.ttf', size=45)
 import random
 import os
 import datetime
@@ -46,14 +46,14 @@ p = Usb(0x0483, 0x5720,timeout=0, in_ep=0x81, out_ep=0x02) #thermal zjiang
 idno=random.randint(10000000,90000000)
 message = str('ID '+str(shipment_code))
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 #draw.text((x, y), message, fill=color, font=font)
 draw.rectangle((190, 30, 570, 300), outline=(0, 0, 0))
 
 (x, y) = (270, column_one_y + rowheight*2)
 message = "SUB-01"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=64)
+font = ImageFont.truetype('sans_serif.ttf', size=64)
 draw.text((x, y), message, fill=color, font=font)
 
 draw.line((210,140,550,140),fill=(0,0,0),width=1)
@@ -68,54 +68,54 @@ draw.line((190,240,570,240),fill=(0,0,0),width=1)
 (x, y) = (280, column_one_y + rowheight*8)
 message = "0 - SUB-01.1"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=32)
+font = ImageFont.truetype('sans_serif.ttf', size=32)
 draw.text((x, y), message, fill=color, font=font)
 
 # adding an unique id number. You can manually take it from user
 (x, y) = (column_x, column_one_y + rowheight * 7)
 message = shipment_code_splitted[0]
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 # adding an unique id number. You can manually take it from user
 (x, y) = (column_x, column_one_y + rowheight * 8)
 message = shipment_code_cut_part_one
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 # adding an unique id number. You can manually take it from user
 (x, y) = (column_x, column_one_y + rowheight * 9)
 message = shipment_code_cut_part_two
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 draw.line((0,315,576,315),fill=(0,0,0),width=1)
 (x, y) = (column_x, column_one_y + rowheight * 10)
 message="non perishable food and snacks [NOT FRAGILE] COP"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 draw.line((0,340,576,340),fill=(0,0,0),width=1)
 
 (x, y) = (column_x, column_one_y + rowheight * 11)
 message="Penerima : Receiver"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 (x, y) = (column_x, column_one_y + rowheight * 12)
 message="Tel      : Receiver"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 (x, y) = (column_x, column_one_y + rowheight * 13)
 message="ETA      : 07 Jul (10:00 - 14:00)"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 (x, y) = (column_x, column_one_y + rowheight * 14)
@@ -127,7 +127,7 @@ draw.text((x, y), message, fill=color, font=font)
 (x, y) = (column_x, column_one_y + rowheight * 16)
 message="Catatan: Gedung seberang mall ciputra world"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 draw.line((0,535,576,535),fill=(0,0,0),width=1)
@@ -135,13 +135,13 @@ draw.line((0,535,576,535),fill=(0,0,0),width=1)
 (x, y) = (column_x, column_one_y + rowheight * 17)
 message="Pengirim : Pengirim"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 (x, y) = (column_x, column_one_y + rowheight * 18)
 message="Tel      : 3123123213"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 draw.line((0,595,576,595),fill=(0,0,0),width=1)
@@ -149,7 +149,7 @@ draw.line((0,595,576,595),fill=(0,0,0),width=1)
 (x, y) = (column_x, column_one_y + rowheight * 19)
 message="Catatan: Gedung seberang mall ciputra world"
 color = 'rgb(0, 0, 0)' # black color
-font = ImageFont.truetype('fonts/sans_serif.ttf', size=24)
+font = ImageFont.truetype('sans_serif.ttf', size=24)
 draw.text((x, y), message, fill=color, font=font)
 
 # save the edited image
